@@ -1,0 +1,311 @@
+/*
+Theme Name: eCarmony Basic HTML
+Author    : Cody Duval
+Version   : 1.0
+
+[Table Of Contents] 
+
+	01- GLOBAL ELEMENTS
+	02- HEADER, NAV, MAIN LOGO
+	03- MAIN STAGE AND BODY ON HOMEPAGE 
+	04- QUESTION PAGE
+	05- RESULTS PAGE
+	06- FOOTER
+	07- CSS BUTTON FROM CSS-TRICKS.COM
+	08- MISC
+
+*/
+
+/*----------------------------------------------------------------------------- 
+=01 GLOBAL ELEMENTS
+-----------------------------------------------------------------------------*/
+
+body {
+	background:url('../images/firstrun-background.png')repeat-x #A5A9B7;
+	padding   : 25px 0;
+}
+
+#wrapper {
+	background        :url('../images/background-inner.jpg')repeat-x #FFFFFF;
+	margin            :0 auto;
+	padding           :10px;
+	-moz-border-radius:15px;
+	border-radius     :15px;
+	border            :2px solid #7587C3;
+
+}
+
+/*----------------------------------------------------------------------------- 
+=02 HEADER, NAV, MAIN LOGO
+-----------------------------------------------------------------------------*/
+
+#header {
+	height  :100px;
+	position:relative;
+	top     :10px;
+}
+
+#socialMedia {
+	margin-bottom:0;
+}
+
+	#socialMedia ul {
+		list-style:none;
+	}
+
+	#socialMedia li {
+		overflow   :hidden;
+		text-indent:-9999px;
+		display    :block;
+		float      :right;
+		margin     :2px 2px 2px 2px;
+	}
+
+			#socialMedia li a {
+				background:url('../images/socialNav.png') no-repeat;
+				display   :block;
+				height    :50px;
+				width     :48px;
+			}
+		
+				#socialMedia li.linkedIn a {
+						background-position: -9px -7px;
+				}
+
+				#socialMedia li.linkedIn a:hover {
+						background-position: -9px -67px;
+				}
+
+				#socialMedia li.twitter a {
+						background-position: -67px -7px;
+				}
+
+				#socialMedia li.twitter a:hover {
+						background-position: -67px -67px;
+				}
+
+				#socialMedia li.facebook a {
+						background-position: -126px -7px;
+				}
+
+				#socialMedia li.facebook a:hover {
+						background-position: -126px -67px;
+				}
+
+				#socialMedia li.rss a {
+						background-position: -184px -7px;
+				}
+
+				#socialMedia li.rss a:hover {
+						background-position: -184px -67px;
+				}
+
+#logo {
+	height       :75px;
+	margin-left  :20px;
+	margin-bottom:0px;
+}
+
+	#nav ul {
+		list-style:none;
+		text-align:right;
+		position  :relative;
+		margin    :0;
+		top       :30px;
+
+	}
+
+	#nav li {
+		display:inline;
+	}
+
+		#nav li a {
+		text-decoration: none;
+		text-align     : center;
+		}
+
+/*----------------------------------------------------------------------------- 
+=03 MAIN STAGE AND BODY ON HOMEPAGE
+-----------------------------------------------------------------------------*/
+
+#mainText {
+	position:relative;
+	top     :50px;
+}
+
+	#mainText h2 {
+		color        :#4B4D53;
+		font-size    :28px;
+		line-height  :100%%;
+		margin-bottom:5px;
+		text-align   :left;
+	}
+
+	#mainText p {
+		color      :black;
+		font-size  :16px;
+		line-height:110%;
+		display    :block;
+	}
+
+	#mainText a {
+		text-align:center;
+		display   :block;
+	}
+
+
+#mainImage{
+	background:url('../images/vw_jetta_2_10-350.jpg') no-repeat center;
+	height    :400px;
+}
+
+#pullQuotes{
+	display   :block;
+	margin-top:90px;
+	color     :#4B4D53;
+}
+
+	#pullQuotes h4 {
+		margin-bottom:5px;
+	}
+
+	#pullQuotes h5 {
+		text-align:right;
+	}
+
+/*----------------------------------------------------------------------------- 
+=04 QUESTION PAGE
+-----------------------------------------------------------------------------*/
+
+#quesBox, #progBox, #projectBox {
+	-moz-border-radius:15px;
+	border-radius     :15px;
+	background        :#DEE3F6;
+	height            :400px;
+	-moz-box-shadow   :10px 10px 5px #888;
+	-webkit-box-shadow:10px 10px 5px #888;
+	box-shadow        :10px 10px 5px #888;
+	margin-top        :15px;
+	padding-top       :5px;
+	padding-left      :18px;
+	border-width      :1px;
+	border-style      :solid;
+	border-color      :#BDBDBD #FFFFFF #FFFFFF #BDBDBD;
+}
+
+label {
+	width:150px;
+	float:left;
+
+}
+
+.input {
+	width                :50px;
+	border               :1px solid #ccc;
+	-webkit-border-radius:5px;
+	-moz-border-radius   :5px;
+	border-radius        :5px;
+}
+
+
+#progBox {
+	margin-left:50px;
+}
+
+/*----------------------------------------------------------------------------- 
+=05 RESULTS PAGE
+-----------------------------------------------------------------------------*/
+
+#resultBoxLeft, #resultBoxRight {
+	-moz-border-radius:15px;
+	border-radius     :15px;
+	background        :#DEE3F6;
+	height            :400px;
+	-moz-box-shadow   :10px 10px 5px #888;
+	-webkit-box-shadow:10px 10px 5px #888;
+	box-shadow        :10px 10px 5px #888;
+	margin-top        :15px;
+	padding-top       :5px;
+	padding-left      :18px;
+	border-width      :1px;
+	border-style      :solid;
+	border-color      :#BDBDBD #FFFFFF #FFFFFF #BDBDBD;
+}
+
+#resultBoxRight {
+	margin-left:50px;
+}
+
+	#resultBoxRight img {
+		display     :block;
+		margin      :auto;
+		border-width:2px;
+		border-style:solid;
+		border-color:#BDBDBD #FFFFFF #FFFFFF #BDBDBD;
+	}
+
+	#resultBoxLeft h4 {
+		margin:2px;
+	}
+
+	#resultBoxLeft p {
+		padding-right: 8px;
+	}
+
+#noThanks {
+	display      :block;
+	position     :relative;
+	top          :90px;
+	float        :right;
+	padding-right:8px;
+}
+
+/*----------------------------------------------------------------------------- 
+=06 FOOTER
+-----------------------------------------------------------------------------*/
+
+#footer {
+	margin-top:25px;
+	text-align:right;
+	height    :50px;
+}
+
+
+/*----------------------------------------------------------------------------- 
+=07 CSS BUTTON FROM CSS-TRICKS.COM
+-----------------------------------------------------------------------------*/
+.button {
+	border-top           :1px solid #e2eef5;
+	background           :#9cacd6;
+	background           :-webkit-gradient(linear, left top, left bottom, from(#1f4bfc), to(#9cacd6));
+	background           :-webkit-linear-gradient(top, #1f4bfc, #9cacd6);
+	background           :-moz-linear-gradient(top, #1f4bfc, #9cacd6);
+	background           :-ms-linear-gradient(top, #1f4bfc, #9cacd6);
+	background           :-o-linear-gradient(top, #1f4bfc, #9cacd6);
+	padding              :6px 12px;
+	-webkit-border-radius:8px;
+	-moz-border-radius   :8px;
+	border-radius        :8px;
+	-webkit-box-shadow   :rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow      :rgba(0,0,0,1) 0 1px 0;
+	box-shadow           :rgba(0,0,0,1) 0 1px 0;
+	text-shadow          :rgba(0,0,0,.4) 0 1px 0;
+	color                :white;
+	font-size            :16px;
+	font-family          :Georgia, Serif;
+	text-decoration      :none;
+	vertical-align       :middle;
+   }
+.button:hover {
+	border-top-color:#6472a7;
+	background      :#6472a7;
+	color           :#ccc;
+   }
+.button:active {
+	border-top-color:#606da0;
+	background      :#606da0;
+   }
+
+/*----------------------------------------------------------------------------- 
+=08 MISC
+-----------------------------------------------------------------------------*/
